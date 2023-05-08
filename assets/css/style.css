@@ -1,0 +1,152 @@
+:root {
+    --white: #fdfdff;
+    --grey: #f2f2f6;
+    --dark: #333355;
+    --blue: #1488db;
+    --whiter-grey: #cccccd;
+    --whiter-blue: #2498eb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* SEMANTIC */
+.hidden {
+    display: none !important;
+}
+
+.white-bg {
+    background-color: var(--white) !important;
+}
+
+.grey-bg {
+    background-color: var(--grey) !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.h-95 {
+    height: 95% !important;
+}
+
+.rounded-shape {
+    border-radius: 50%;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+/* HEADING */
+.heading {
+    height: 4rem;
+}
+
+.nav-item a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.nav-item a:hover {
+    /* background-color: var(--blue); */
+    animation: navItemHover 0.2s ease forwards;
+}
+
+@keyframes navItemHover {
+    to {
+        color: var(--white);
+        background-color: var(--blue);
+    }
+}
+
+.profile {
+    padding: 0.8rem;
+}
+
+
+
+/* MAIN */
+.cv-field {
+    border-radius: 10px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-field i {
+    border-radius: 50%;
+    padding: 12px 10px 10px 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1;
+    vertical-align: center;
+    text-align: center;
+}
+
+.cv-field i:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.field-item {
+    border-bottom: 1px solid var(--whiter-grey);
+}
+
+.field-item-logo {
+    width: 5rem;
+}
+
+
+.modal-view {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-container {
+    position: absolute;
+    background-color: var(--white);
+    width: 50%;
+    max-height: 700px;
+    animation: modalFadeIn ease 0.5s;
+    
+}
+
+.modal-content {
+    overflow: auto;
+}
+
+.modal-heading {
+    border-bottom: 1px solid var(--whiter-grey);
+}
+
+.modal-button {
+    align-self: flex-end;
+}
+
+.modal-container textarea {
+    min-height: 100px;
+}
