@@ -1,0 +1,106 @@
+{
+  "user": [
+    {
+      "id": 0,
+      "username": "Anh Dinh",
+      "email": "anhdinh@gmail.com",
+      "password": "123123",
+      "cv-id": 0
+    }
+  ],
+  "cv": [
+    {
+      "id": 0,
+      "objective": "Lorem ipsum is something",
+      "additional": "This is a sample additionals",
+      "education-id": [
+        0,
+        1
+      ],
+      "certificate-id": [
+        0,
+        1
+      ],
+      "experience-id": [
+        0,
+        1
+      ],
+      "reference-id": [
+        0
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 0,
+      "school": "Ho Chi Minh City University of Technology",
+      "degree": "Bachelor's degree",
+      "field": "Computer Science",
+      "start-month": 10,
+      "start-year": 2020,
+      "end-month": 11,
+      "end-year": 2024
+    },
+    {
+      "id": 1,
+      "school": "University of Economics Ho Chi Minh City",
+      "degree": "Bachelor's degree",
+      "field": "Business Analysis",
+      "start-month": 10,
+      "start-year": 2020,
+      "end-month": 11,
+      "end-year": 2024
+    }
+  ],
+  "certificate": [
+    {
+      "id": 0,
+      "name": "CS50's Introduction to Computer Science",
+      "organization": "Harvard University",
+      "credential": "0000000000",
+      "issue-month": 10,
+      "issue-year": 2021,
+      "expire-month": null,
+      "expire-year": null
+    },
+    {
+      "name": "CS50's Introduction to Programming with Python",
+      "organization": "Harvard University",
+      "issue-month": "10",
+      "issue-year": "2020",
+      "expire-month": "12",
+      "expire-year": "2025",
+      "": "",
+      "id": 1
+    }
+  ],
+  "experience": [
+    {
+      "id": 0,
+      "position": "Teaching Assistant",
+      "company": "Ho Chi Minh City University of Technology",
+      "start-month": 10,
+      "start-year": 2022,
+      "end-month": null,
+      "end-year": null
+    },
+    {
+      "position": "Software Engineering",
+      "company": "Katalon",
+      "start-month": "10",
+      "start-year": "2020",
+      "end-month": "",
+      "end-year": "",
+      "id": 1
+    }
+  ],
+  "reference": [
+    {
+      "id": 0,
+      "name": "Anh Dinh Le Nhat",
+      "phone": "01111111",
+      "email": "anhdinhlenhat@gmail.com",
+      "relation": "Supervisor"
+    }
+  ]
+}
