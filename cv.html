@@ -48,7 +48,7 @@
                     <textarea name="objective" class="w-100 text-main border-none p-2 my-2"></textarea>
                     <button type="button" class="btn btn-primary">Save</button>
                 </div>
-                <p class="">HI</p>
+                <p class=""></p>
             </div>
             <div field-name="education" class="cv-field templated-field white-bg mb-4 py-3 px-3">
                 <div class="title-container p-2">
@@ -56,26 +56,7 @@
                     <i class="ti-plus"></i>
                 </div>
                 <div class="field-content ps-2">
-                    <div class="field-item d-flex py-4">
-                        <div class="field-item-logo d-flex align-items-start justify-content-center">
-                            <img class="w-80" src="/assets/img/logoBK.png" alt="">
-                        </div>
-                        <div class="field-item-text">
-                            <p class="line h6">Ho Chi Minh City University of Technology</p>
-                            <p class="line">Bachelor's degree, Computer Science</p>
-                            <p class="line">Oct 2020 - Nov 2024</p>
-                        </div>
-                    </div>
-                    <div class="field-item d-flex py-4">
-                        <div class="field-item-logo d-flex align-items-start justify-content-center">
-                            <img class="w-80" src="/assets/img/logoBK.png" alt="">
-                        </div>
-                        <div class="field-item-text">
-                            <p class="line h6">Ho Chi Minh City University of Technology</p>
-                            <p class="line">Bachelor's degree, Computer Science</p>
-                            <p class="line">Oct 2020 - Nov 2024</p>
-                        </div>
-                    </div>
+                    <!-- EMPTY ON PURPOSE -->
                 </div>
             </div>
             <div field-name="certificate" class="cv-field templated-field white-bg mb-4 py-3 px-3">
@@ -83,11 +64,17 @@
                     <h5 class="field-title">Certificates</h5>
                     <i class="ti-plus"></i>
                 </div>
+                <div class="field-content ps-2">
+                    <!-- EMPTY ON PURPOSE -->
+                </div>
             </div>
             <div field-name="experience" class="cv-field templated-field white-bg mb-4 py-3 px-3">
                 <div class="title-container p-2">
                     <h5 class="field-title">Experience</h5>
                     <i class="ti-plus"></i>
+                </div>
+                <div class="field-content ps-2">
+                    <!-- EMPTY ON PURPOSE -->
                 </div>
             </div>
             <div field-name="additional" class="cv-field text-field white-bg mb-4 py-4 px-4">
@@ -106,41 +93,44 @@
                     <h5 class="field-title">Reference</h5>
                     <i class="ti-plus"></i>
                 </div>
+                <div class="field-content ps-2">
+                    <!-- EMPTY ON PURPOSE -->
+                </div>
             </div>
         </form>
     </div>
 
-    <div id="experience-modal" class="modal-view hidden position-fixed d-flex justify-content-center align-items-center">
+    <div id="experience" class="modal-view hidden position-fixed d-flex justify-content-center align-items-center">
         <div class="modal-container d-flex flex-column">
             <div class="modal-heading d-flex justify-content-between align-items-center px-4 py-3">
                 <h5 class="title">Add experience</h5>
                 <i class="ti-close"></i>
             </div>
             <div class="modal-content px-4 py-3">
-                <form action="">
+                <form name="experience">
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Position</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="position" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Company</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="company" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Start date</p>
                         <div class="modal-field-input d-flex">
-                            <input type="text" class="w-100 me-3 p-1 px-2">
-                            <input type="text" class="w-100 p-1 px-2">
+                            <input type="text" name="start-month" class="w-100 me-3 p-1 px-2">
+                            <input type="text" name="start-year" class="w-100 p-1 px-2">
                         </div>
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">End date</p>
                         <div class="modal-field-input d-flex">
-                            <input type="text" class="w-100 me-3 p-1 px-2">
-                            <input type="text" class="w-100 p-1 px-2">
+                            <input type="text" name="end-month" class="w-100 me-3 p-1 px-2">
+                            <input type="text" name="end-year" class="w-100 p-1 px-2">
                         </div>
                     </div>
                 </form>
@@ -152,58 +142,58 @@
     </div>
 
 
-    <div id="education-modal" class="modal-view hidden position-fixed d-flex justify-content-center align-items-center">
+    <div id="education" class="modal-view hidden position-fixed d-flex justify-content-center align-items-center">
         <div class="modal-container d-flex flex-column">
             <div class="modal-heading d-flex justify-content-between align-items-center px-4 py-3">
                 <h5 class="title">Add education</h5>
                 <i class="ti-close"></i>
             </div>
             <div class="modal-content px-4 py-3">
-                <form action="">
+                <form name="education">
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">School</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="school" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Degree</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="degree" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Field of study</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="field" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Start date</p>
                         <div class="modal-field-input d-flex">
-                            <input type="text" class="w-100 me-3 p-1 px-2">
-                            <input type="text" class="w-100 p-1 px-2">
+                            <input type="text" name="start-month" class="w-100 me-3 p-1 px-2">
+                            <input type="text" name="start-year" class="w-100 p-1 px-2">
                         </div>
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">End date</p>
                         <div class="modal-field-input d-flex">
-                            <input type="text" class="w-100 me-3 p-1 px-2">
-                            <input type="text" class="w-100 p-1 px-2">
+                            <input type="text" name="end-month" class="w-100 me-3 p-1 px-2">
+                            <input type="text" name="end-year" class="w-100 p-1 px-2">
                         </div>
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Grade</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="grade" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Activities and societies</p>
-                        <textarea type="text" class="w-100 p-1 px-2"></textarea>
+                        <textarea type="text" name="activities" class="w-100 p-1 px-2"></textarea>
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Description</p>
-                        <textarea type="text" class="w-100 p-1 px-2"></textarea>
+                        <textarea type="text" name="description" class="w-100 p-1 px-2"></textarea>
                     </div>
                 </form>
             </div>
@@ -214,37 +204,37 @@
     </div>
 
 
-    <div id="certificate-modal" class="modal-view hidden position-fixed d-flex justify-content-center align-items-center">
+    <div id="certificate" class="modal-view hidden position-fixed d-flex justify-content-center align-items-center">
         <div class="modal-container d-flex flex-column">
             <div class="modal-heading d-flex justify-content-between align-items-center px-4 py-3">
                 <h5 class="title">Add certificate</h5>
                 <i class="ti-close"></i>
             </div>
             <div class="modal-content px-4 py-3">
-                <form action="">
+                <form name="certificate">
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Name</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="name" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Issuing organization</p>
-                        <input type="text" class="w-100 p-1 px-2">
+                        <input type="text" name="organization" class="w-100 p-1 px-2">
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Issue date</p>
                         <div class="modal-field-input d-flex">
-                            <input type="text" class="w-100 me-3 p-1 px-2">
-                            <input type="text" class="w-100 p-1 px-2">
+                            <input type="text" name="issue-month" class="w-100 me-3 p-1 px-2">
+                            <input type="text" name="issue-year" class="w-100 p-1 px-2">
                         </div>
                     </div>
 
                     <div class="modal-field mb-3">
                         <p class="modal-field-title mb-1 px-1">Expiration date</p>
                         <div class="modal-field-input d-flex">
-                            <input type="text" class="w-100 me-3 p-1 px-2">
-                            <input type="text" class="w-100 p-1 px-2">
+                            <input type="text" name="expire-month" class="w-100 me-3 p-1 px-2">
+                            <input type="text" name="expire-year" class="w-100 p-1 px-2">
                         </div>
                     </div>
 
